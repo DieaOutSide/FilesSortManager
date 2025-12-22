@@ -3,7 +3,8 @@
 A simple and efficient Python tool for automatic file organization. This script sorts files into categorized folders based on their extensions using a customizable JSON preset.
 
 ---
-
+![GUIscreenshot](https://raw.githubusercontent.com/DieaOutSide/FilesSortManager/refs/heads/main/guiscreenshot.jpg)
+---
 ### 📋 Overview
 Managing a cluttered "Downloads" or "Desktop" folder can be a headache. This tool automates the process:
 1. **Scans** your chosen directory.
