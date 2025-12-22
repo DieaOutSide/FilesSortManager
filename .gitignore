@@ -218,4 +218,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+<<<<<<< HEAD
 # End of https://www.toptal.com/developers/gitignore/api/python,windows,visualstudiocode
+=======
+# End of https://www.toptal.com/developers/gitignore/api/python,windows,visualstudiocode
+>>>>>>> b3c8e563007345536a84c6d3ac5194eb008d32cd
