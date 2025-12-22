@@ -1,4 +1,4 @@
-# File Sorter (Alpha v1.0) 📂
+# File Sorter (Alpha v1.1) 📂
 
 A simple and efficient Python tool for automatic file organization. This script sorts files into categorized folders based on their extensions using a customizable JSON preset.
 
