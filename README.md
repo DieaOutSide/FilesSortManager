@@ -1,4 +1,4 @@
-# File Sorter (Alpha v1.0) 📂
+# File Sorter (Alpha v1.1) 📂
 
 A simple and efficient Python tool for automatic file organization. This script sorts files into categorized folders based on their extensions using a customizable JSON preset.
 
@@ -14,12 +14,6 @@ Managing a cluttered "Downloads" or "Desktop" folder can be a headache. This too
 ### 🛠 How It Works
 * **GUI Selection:** Uses `tkinter` dialogs to easily pick your target directory and configuration file.
 * **Duplicate Protection:** The script prevents overwriting existing files by automatically adding a counter to the filename:
-    ```python
-    while os.path.exists(new_path):
-        new_filename = f"{name} ({counter}){ext}"
-        new_path = os.path.join(folder, new_filename)
-        counter += 1
-    ```
 * **Smart Categorization:** If a file extension isn't in your list, it's moved to an **"Extra"** folder, and the script updates your JSON preset for future use.
 
 ---
