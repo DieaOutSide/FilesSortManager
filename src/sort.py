@@ -1,4 +1,4 @@
-import os, sys, json, shutil
+import os, json, shutil
 import logging
 
 def mkfolders(base_path, names):

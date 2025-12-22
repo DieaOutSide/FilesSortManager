@@ -11,16 +11,11 @@ Managing a cluttered "Downloads" or "Desktop" folder can be a headache. This too
 3. **Moves** files into organized subfolders.
 4. **Auto-updates** your preset file if it encounters new, unknown extensions.
 
-### 🛠 How It Works
-* **GUI Selection:** Uses `tkinter` dialogs to easily pick your target directory and configuration file.
+### 🛠 Features
+* **File selection** Now uses `flet` dialogs to easily pick your target directory and configuration file .
 * **Duplicate Protection:** The script prevents overwriting existing files by automatically adding a counter to the filename:
-    ```python
-    while os.path.exists(new_path):
-        new_filename = f"{name} ({counter}){ext}"
-        new_path = os.path.join(folder, new_filename)
-        counter += 1
-    ```
 * **Smart Categorization:** If a file extension isn't in your list, it's moved to an **"Extra"** folder, and the script updates your JSON preset for future use.
+* **GUI** Moved from `tkinter` to `flet`, just good design.
 
 ---
 
@@ -46,7 +41,13 @@ You can define your own rules. Here is an expanded example including common form
 1. **Requirements** Ensure you have Python 3.x installed.
 2. **Run** Execute the script via terminal or double-click:
     ```bash
-    python main.py
+    python main.py # works but there is beter way
+    ```
+    ```bash
+    flet run main.py # runs program directly with flet (just 'flet run' also works)
+    ```
+    ```bash
+    flet run --web #This version contains problems related to folder selection, does not work!
     ```
 3. **Setup** Select your `preset.json` file (you can set it up however you like).
 4. **Done** Check your folder for the newly organized results!
@@ -57,10 +58,10 @@ You can define your own rules. Here is an expanded example including common form
 **Note**: This is the first alpha release.
 
 * **Compatibility**: Tested only on Windows 10.
-* **Future Updates**: Planned improvements include a more user-friendly interface, detailed logging, and convenient creation/use of various presets, among others.
+* **Future Updates**: Improvements are planned in everything!
 
 ---
 
-*Designed to automate routine tasks. This is my first "project" that I'm posting. Feedback is welcome!*
+*Designed to automate routine tasks. This is my first "project" that I'm posting, so it may contain critical errors. Feedback is welcome!*
 
 ---

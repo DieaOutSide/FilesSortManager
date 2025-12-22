@@ -1,0 +1,29 @@
+[project]
+name = "filessortmanager"
+version = "0.1.1"
+description = ""
+requires-python = ">=3.9"
+authors = [
+    { name = "kxx0" }
+]
+dependencies = [
+  "flet==0.28.3"
+]
+
+[tool.flet]
+product = "File Sorter"
+
+[tool.flet.app]
+path = "src"
+assets = "assets"
+
+[tool.uv]
+dev-dependencies = [
+    "flet[all]==0.28.3",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+flet = {extras = ["all"], version = "0.28.3"}
