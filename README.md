@@ -1,4 +1,4 @@
-# File Sorter (Alpha v1.1) 📂
+# File Sorter (Alpha v1.3) 📂
 
 A simple and efficient Python tool for automatic file organization. This script sorts files into categorized folders based on their extensions using a customizable JSON preset.
 
@@ -17,6 +17,7 @@ Managing a cluttered "Downloads" or "Desktop" folder can be a headache. This too
 * **Duplicate Protection:** The script prevents overwriting existing files by automatically adding a counter to the filename:
 * **Smart Categorization:** If a file extension isn't in your list, it's moved to an **"Extra"** folder, and the script updates your JSON preset for future use.
 * **GUI** Moved from `tkinter` to `flet`, just good design.
+* **Preset selection** Now added "Preset List" to choose your presets quickly.
 
 ---
 
@@ -55,11 +56,20 @@ You can define your own rules. Here is an expanded example including common form
 
 ---
 
-### ⚠️ Project Status
-**Note**: This is the first alpha release.
+### 🦺 Building your app
+1. **Requirements** Ensure you have Python 3.x installed.
+2. **Run** those commands from terminal:
+    ```bash
+    flet build #use it inside directory of source
+    ```
+3. **Done** Check your folder for the file!
+   
+*I didnt tested it yet, so it may contain critical errors*
+   
+---
 
-* **Compatibility**: Tested only on Windows 10.
-* **Future Updates**: Improvements are planned in everything!
+### ⚠️ Project Status
+**Note**: I will test that on Linux and Win after compilation, and that will complete the project. 
 
 ---
 
